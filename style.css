@@ -1,4 +1,165 @@
-body{
-    background: linear-gradient(180deg, rgb(233, 76, 76) 0%,gray 100%);
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
 
+body {
+    background-color: #343A40;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.6em;
+    padding-bottom: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.bar-left-side img {
+    width: auto;
+    height: 15vh;
+}
+
+.bar-right-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0.6em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    margin-right: 2.30em;
+    gap: 4.50em;  
+}
+
+.nav-link:hover {
+    display: flex;
+    color: #F90706;
+}
+
+.nav-link {
+    display: flex;
+    row-gap: 1em;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.20em;
+}
+
+.team-intro-section {
+    padding-top: 8.8em;
+    padding-bottom: 8.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.brief-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-intro-name {
+    color: black;
+    font-weight: bold;
+    font-size: 2.3em;
+    padding-left: 1em;
+}
+
+.brief-about p {
+    color: black;
+    padding-right: 31em;
+    padding-left: 2em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.team-logo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1em;
+}
+
+.coaches-tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.coaches-des h2 {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 3em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.top-coach-pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4em;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+.bot-coach-pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 0.1em;
+}
+
+.coach-pics {
+    display: flex;
+    justify-content: center;
+    width: 15em;
+    height: auto;
+    background-color: #f4f4f4;
+    border-radius: 1em;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
