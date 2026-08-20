@@ -1,14 +1,22 @@
-* {
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
 body {
+    margin: 0;
+    overflow-x: hidden;
     background-color: #343A40;
 }
 
 .top-bar {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -16,18 +24,21 @@ body {
     padding-bottom: 0.1em;
     padding-left: 1em;
     padding-right: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
     background-color: white;
     border-radius: 1em;
 }
 
 .bar-left-side img {
+    display: flex;
+    flex-wrap: wrap;
     width: auto;
     height: 15vh;
 }
 
 .bar-right-side{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     padding-bottom: 0.6em;
@@ -35,6 +46,7 @@ body {
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -50,6 +62,7 @@ ul {
 
 .nav-link {
     display: flex;
+    flex-wrap: wrap;
     row-gap: 1em;
     text-decoration: none;
     list-style-type: none;
@@ -59,17 +72,18 @@ ul {
 }
 
 .team-intro-section {
-    padding-top: 8.8em;
-    padding-bottom: 8.8em;
+    padding-top: 8.3em;
+    padding-bottom: 8.3em;
     padding-left: 1em;
     padding-right: 1em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom: 0em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0em;
+    margin-right: 0em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     border-radius: 1em;
@@ -77,28 +91,58 @@ ul {
 
 .brief-about {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    width: 10em;
+    padding-right: 0em;
+    margin-right: 0em;
 }
 
 .team-intro-name {
+    display:flex;
+    flex-wrap: wrap;
+    height: 1.2em;
     color: black;
     font-weight: bold;
     font-size: 2.3em;
     padding-left: 1em;
+    border-spacing: 0em;
+    margin-bottom: 0em;
+    margin-right: 0em;
+    padding-right: 0em;
+    border-right: 0em;
+}
+
+.brief-about .sub-intro {
+    display: flex;
+    flex-wrap: wrap;
+    color: red;
+    font-size: 1.85em;
+    font-weight: bold;
+    padding-right: 2em;
+    margin-top: 0em;
+    margin-left: -0.80em;
+    border-spacing: 0em;
 }
 
 .brief-about p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 24.5em;
     color: black;
-    padding-right: 31em;
     padding-left: 2em;
     font-size: 1.2em;
     text-align: justify;
+    border-spacing: 0em;
+    margin-top: -0.1em;
+    padding-bottom: 0em;
 }
 
 .team-logo {
     display: flex;
     flex-wrap: wrap;
     padding-right: 1em;
+    margin-right: 5em;
 }
 
 .coaches-tab {
@@ -112,9 +156,9 @@ ul {
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 0.5em;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -125,6 +169,7 @@ ul {
 
 .coaches-des h2 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     color: black;
     font-size: 3em;
@@ -139,8 +184,6 @@ ul {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 4em;
-    margin-right: 10em;
-    margin-left: 10em;
 }
 
 .bot-coach-pics {
@@ -148,8 +191,6 @@ ul {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 4em;
-    margin-left: 10em;
-    margin-right: 10em;
     margin-top: 0.1em;
 }
 
@@ -162,4 +203,210 @@ ul {
     border-radius: 1em;
     box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.3);
     overflow: hidden;
+}
+
+.sponsors-tab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    margin: 0.1em 0 1em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.sponsor-des {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.sponsor-des h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: black;
+    font-size: 3em;
+    margin-top: 0.5;
+}
+
+.sponsor-pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+}
+
+.top-spon, .bot-spon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    /* Top navigation */
+    .top-bar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        padding: 0.5em 1em 1em;
+    }
+
+    .bar-left-side img {
+        height: 12vh;
+        max-width: 100%;
+    }
+
+    .bar-right-side {
+        padding-bottom: 0;
+    }
+
+    ul {
+        justify-content: center;
+        gap: 1.5em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 1em;
+    }
+
+    .team-intro-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        padding: 3em 1em;
+        gap: 2em;
+    }
+
+    .brief-about {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .team-intro-name {
+        height: auto;
+        padding: 0;
+        margin: 0;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .brief-about .sub-intro {
+        padding: 0;
+        margin: 0.5em 0;
+        font-size: 1.3em;
+    }
+
+    .brief-about p {
+        width: 100%;
+        max-width: 35em;
+
+        padding: 0;
+        margin: 0;
+
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .team-logo {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .team-logo img {
+        width: min(80vw, 300px);
+        height: auto;
+    }
+
+    .coaches-ab {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2em;
+        padding: 1.5em 1em;
+    }
+
+    .coaches-des h2 {
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .top-coach-pics,
+    .bot-coach-pics {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        gap: 2em;
+    }
+
+    .coach-pics {
+        width: min(80vw, 250px);
+    }
+
+    .coach-pics img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sponsors-tab {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2em;
+        padding: 1.5em 1em;
+    }
+
+    .sponsor-des {
+        margin: 0;
+    }
+
+    .sponsor-des h2 {
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .sponsor-pics {
+        width: 100%;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .top-spon,
+    .bot-spon {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        gap: 2em;
+    }
+
+    .sponsor-pics img {
+        max-width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
 }
