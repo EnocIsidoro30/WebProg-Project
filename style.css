@@ -152,6 +152,7 @@ ul {
     align-items: center;
     gap: 2em;
     padding: 1em;
+    padding-bottom: 5em;
     margin: 0.5em 0;
     background-color: white;
     border-radius: 1em;
@@ -198,11 +199,11 @@ ul {
 .sponsors-tab {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0em;
-    padding: 1em;
+    padding: 2em 1em;
     margin: 0.1em 0 1em;
     background-color: white;
     border-radius: 1em;
@@ -213,16 +214,16 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .sponsor-des h2 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     color: black;
     font-size: 3em;
-    margin-top: 0.5;
+    margin: 0;
 }
 
 .sponsor-pics {
@@ -230,8 +231,8 @@ ul {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
     width: 100%;
+    gap: 3em;
 }
 
 .top-spon, .bot-spon {
@@ -239,8 +240,8 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5em;
     width: 100%;
+    gap: 5em;
 }
 
 .bot-spon {
