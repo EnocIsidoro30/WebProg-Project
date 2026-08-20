@@ -72,8 +72,8 @@ ul {
 }
 
 .team-intro-section {
-    padding-top: 8.3em;
-    padding-bottom: 8.3em;
+    padding-top: 9em;
+    padding-bottom: 9em;
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 0.5em;
@@ -147,22 +147,12 @@ ul {
 
 .coaches-tab {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     flex-direction: column;
-    gap: 2em;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 0em;
-    margin-right: 0em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 2em;
+    padding: 1em;
+    margin: 0.5em 0;
     background-color: white;
     border-radius: 1em;
 }
@@ -211,7 +201,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 0em;
     padding: 1em;
     margin: 0.1em 0 1em;
     background-color: white;
@@ -223,7 +213,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-bottom: 1em;
 }
 
 .sponsor-des h2 {
@@ -251,6 +241,90 @@ ul {
     align-items: center;
     gap: 5em;
     width: 100%;
+}
+
+.bot-spon {
+    padding-bottom: 9em;
+}
+
+.site-footer {
+    background-color: #212529;
+    color: white;
+    margin-top: 1em;
+    border-radius: 1em 1em 0 0;
+    border-top: 0.3em solid #F90706;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 3em;
+    padding: 3em 2em;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+}
+
+.footer-about {
+    align-items: center;
+    text-align: center;
+}
+
+.footer-about img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.footer-about p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-links h3, .footer-contact h3 {
+    color: #F90706;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.footer-links {
+    gap: 0.7em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #F90706;
+}
+
+.footer-contact p {
+    margin: 0.3em 0;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-top: 1px solid #495057;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
 }
 
 @media (max-width: 768px) {
@@ -287,7 +361,6 @@ ul {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
         padding: 3em 1em;
         gap: 2em;
     }
@@ -316,10 +389,8 @@ ul {
     .brief-about p {
         width: 100%;
         max-width: 35em;
-
         padding: 0;
         margin: 0;
-
         font-size: 1em;
         text-align: justify;
     }
@@ -335,11 +406,10 @@ ul {
         height: auto;
     }
 
-    .coaches-ab {
+    .coaches-tab {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         gap: 2em;
         padding: 1.5em 1em;
     }
@@ -350,12 +420,10 @@ ul {
         text-align: center;
     }
 
-    .top-coach-pics,
-    .bot-coach-pics {
+    .top-coach-pics, .bot-coach-pics {
         width: 100%;
         justify-content: center;
         align-items: center;
-
         margin: 0;
         gap: 2em;
     }
@@ -373,7 +441,6 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         gap: 2em;
         padding: 1.5em 1em;
     }
@@ -399,7 +466,6 @@ ul {
         width: 100%;
         justify-content: center;
         align-items: center;
-
         margin: 0;
         gap: 2em;
     }
@@ -408,5 +474,31 @@ ul {
         max-width: 80%;
         height: auto;
         object-fit: contain;
+    }
+
+    .site-footer {
+    border-radius: 1em 1em 0 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5em;
+        padding: 2em 1em;
+    }
+
+    .footer-about, .footer-links, .footer-contact {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        padding: 1em;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8em;
     }
 }
